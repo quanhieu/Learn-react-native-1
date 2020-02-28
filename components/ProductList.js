@@ -12,7 +12,7 @@ function ProductList(props) {
                 <Text style={styles.name}>{product.name}</Text>
                     <View style={styles.priceRow}>
                         <Text style={styles.price}>{formatPrice(product.price)}</Text>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => console.warn("That ok")}>
                             <Text style={styles.cartText}>Add to Cart</Text>
                         </TouchableOpacity>
                     </View>

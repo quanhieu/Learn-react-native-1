@@ -13,7 +13,7 @@ function Categorylist(props) {
                 <Text style={styles.text}>
                     {value.name}
                 </Text>
-                <Image style={styles.categoryImage} source={value.img}/>
+                <Image style={styles.categoryImage} source={{uri: value.img}}/>
             </View>
         </TouchableOpacity>
     )
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         marginBottom: 8
     },
     categoryImage: {
-        width: 64,
-        height: 64
+        width: 380,
+        height: 90
     }    
 })

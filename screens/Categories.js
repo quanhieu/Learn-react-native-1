@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CategoryList from "../components/CategoryList";
 import { View, FlatList, StyleSheet } from "react-native";
+import axios from "axios";
 import email from "../assets/images/email.png";
 import maintenance from "../assets/images/maintenance.png";
 import trash from "../assets/images/trash.png";
@@ -20,12 +21,16 @@ class Categories extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            categories: [
-                {id: 1, name: "Document", img: email},
-                {id: 2, name: "Repair tool", img: maintenance},
-                {id: 3, name: "Trash can", img: trash}
-            ]
+            categories: []
         }
+    }
+
+    async componentDidMount() {
+        await axios.get("http:/10.0.3.2:3000/categories")
+            .then(res => {
+                this.setState({categories: res.data})
+            })
+            .catch(err => console.error(err))
     }
 
     render() {

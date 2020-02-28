@@ -1,0 +1,23 @@
+{
+    "categories": [
+        {"id": 1, "name": "Document", "img": "https://images.unsplash.com/photo-1523906891494-64b456bf3c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"},
+        {"id": 2, "name": "Repair tool", "img": "https://images.unsplash.com/photo-1562615202-0b3035d14b6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1478&q=80"},
+        {"id": 3, "name": "Trash can", "img": "https://images.unsplash.com/photo-1570575237245-076d5ee3d6e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}
+    ],
+    "products": [
+        {
+            "id": 1,
+            "image": "https://images.unsplash.com/photo-1572865662893-fd784e0a2e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+            "name": "Drill",
+            "price": 25,
+            "category": 1
+        },
+        {
+            "id": 2,
+            "image": "https://images.unsplash.com/photo-1578349279248-c12ad135ff9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=602&q=80",
+            "name": "Pain brush",
+            "price": 8,
+            "category": 2
+        }
+    ]
+}
