@@ -18,6 +18,20 @@
             "name": "Pain brush",
             "price": 8,
             "category": 2
+        },
+        {
+            "id": 3,
+            "image": "https://images.unsplash.com/photo-1572865662893-fd784e0a2e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+            "name": "Drill",
+            "price": 25,
+            "category": 3
+        },
+        {
+            "id": 4,
+            "image": "https://images.unsplash.com/photo-1578349279248-c12ad135ff9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=602&q=80",
+            "name": "Pain brush",
+            "price": 8,
+            "category": 3
         }
     ]
 }

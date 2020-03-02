@@ -10,7 +10,10 @@
     "test": "jest",
     "lint": "eslint *.js **/*.js",
     "react-devtool": "react-devtools",
-    "mock-server": "json-server ./mock-db/db.json"
+    "server": "json-server ./mock-db/db.json"
+  },
+  "eslintConfig": {
+    "extends": "react-native-app"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",
@@ -22,8 +25,10 @@
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.13",
+    "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.2.1",
-    "react-navigation-stack": "^2.2.1"
+    "react-navigation-stack": "^2.2.1",
+    "react-navigation-tabs": "^2.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

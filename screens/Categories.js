@@ -2,20 +2,18 @@ import React, { Component } from 'react';
 import CategoryList from "../components/CategoryList";
 import { View, FlatList, StyleSheet } from "react-native";
 import axios from "axios";
-import email from "../assets/images/email.png";
-import maintenance from "../assets/images/maintenance.png";
-import trash from "../assets/images/trash.png";
 
 class Categories extends Component {
     static navigationOptions = {
         title: 'Home',
         headerStyle: {
-            backgroundColor: '#f4511e',
+            backgroundColor: '#f4511e'
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
-            fontWeight: 'bold',
-        }
+            fontWeight: 'bold'
+        },
+        headerTitleAlign: "center"
     };
 
     constructor(props) {
@@ -26,7 +24,7 @@ class Categories extends Component {
     }
 
     async componentDidMount() {
-        await axios.get("http:/10.0.3.2:3000/categories")
+        await axios.get("/categories")
             .then(res => {
                 this.setState({categories: res.data})
             })
@@ -44,7 +42,8 @@ class Categories extends Component {
                         <CategoryList 
                             value={item} 
                             onPress={() => navigation.navigate("Category", {
-                                categoryName: item.name
+                                categoryName: item.name,
+                                categoryId: item.id
                             })}
                         />
                     )}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Image, View, StyleSheet, TouchableOpacity } from "react-native";
+import {Text, Image, View, StyleSheet, TouchableOpacity} from 'react-native';
 
 function Categorylist(props) {
     const { value, onPress } = props;

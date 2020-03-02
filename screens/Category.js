@@ -18,9 +18,15 @@ class Category extends Component {
     }
 
     async componentDidMount() {
-        await axios.get("http:/10.0.3.2:3000/products")
-            .then(res => this.setState({products: res.data}))
-            .catch(err => console.error(err))
+        try {
+            const {navigation} = this.props;
+            const {categoryId} = navigation.state.params;
+            await axios.get(`/products?category=${categoryId}`)
+                .then(res => this.setState({products: res.data}))
+                .catch(err => console.error(err))
+        } catch(err) {
+            console.log(err);
+        }
     }
 
     render() {
